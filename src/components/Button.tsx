@@ -8,7 +8,6 @@ interface ButtonProps {
   variant?: ButtonVariant;
   colorScheme?: ButtonColorScheme;
   href?: string;
-  onClick?: () => void;
   className?: string;
   type?: "button" | "submit" | "reset";
 }
@@ -31,7 +30,6 @@ const Button = ({
   variant = "primary",
   colorScheme = "dark",
   href,
-  onClick,
   className = "",
   type = "button",
 }: ButtonProps) => {
@@ -76,7 +74,7 @@ const Button = ({
   }
 
   return (
-    <button type={type} onClick={onClick} className={styles}>
+    <button type={type} className={styles}>
       {content}
     </button>
   );
