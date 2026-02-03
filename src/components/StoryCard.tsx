@@ -22,6 +22,7 @@ const StoryCard = ({ title, author, images, href = "#" }: Story) => {
           className="object-cover block w-full"
         />
       </picture>
+      <div className="absolute top-0 right-0 bottom-0 left-0 bg-linear-to-t from-black/50 to-transparent/0 pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-full h-1 bg-linear-to-r from-accent-peach via-accent-pink to-accent-blue opacity-0 transition-opacity duration-300 lg:group-hover:opacity-100" />
       <div className="absolute bottom-0 px-10 pb-10 text-white w-full">
         <h3 className="text-preset-4 mb-1">{title}</h3>
@@ -29,7 +30,8 @@ const StoryCard = ({ title, author, images, href = "#" }: Story) => {
         <hr className="border-white w-full" />
         <Button
           variant="link"
-          className="text-white mt-5 w-full justify-between"
+          colorScheme="light"
+          className="mt-5 w-full justify-between"
           href={href}
         >
           READ STORY

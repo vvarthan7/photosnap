@@ -88,7 +88,11 @@ const TextImage = ({
           alt={alt}
           width={images.mobile.width}
           height={images.mobile.height}
-          className={clsx("w-full object-cover")}
+          className={clsx(
+            "w-full object-cover",
+            isHero ? "md:h-[650px]" : "md:h-[600px]",
+            isHero ? "lg:h-[650px]" : "lg:h-[600px]",
+          )}
           loading={isHero ? "eager" : "lazy"}
           fetchPriority={isHero ? "high" : "auto"}
           decoding={isHero ? "sync" : "async"}
