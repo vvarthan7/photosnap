@@ -1,5 +1,4 @@
 import clsx from "clsx";
-import Image from "next/image";
 import Button from "./Button";
 
 interface ImageSource {
@@ -13,7 +12,7 @@ interface TextImageProps {
   description: string;
   btnLabel: string;
   imagePosition: "left" | "right";
-  bgColor: string;
+  bgColor: "bg-neutral-950" | "bg-neutral-0";
   images: {
     mobile: ImageSource;
     tablet: ImageSource;
@@ -21,6 +20,7 @@ interface TextImageProps {
   };
   alt: string;
   isHero?: boolean;
+  blurDataURL?: string;
 }
 
 const TextImage = ({
@@ -32,6 +32,7 @@ const TextImage = ({
   images,
   alt,
   isHero = false,
+  blurDataURL,
 }: TextImageProps) => {
   const Heading = isHero ? "h1" : "h2";
   const isDarkBg = bgColor === "bg-neutral-950";
@@ -68,25 +69,36 @@ const TextImage = ({
           {btnLabel}
         </Button>
       </div>
-      <picture className="w-full md:w-auto">
-        <source
-          media="(min-width: 1024px)"
-          srcSet={images.desktop.src}
-          width={images.desktop.width}
-          height={images.desktop.height}
-        />
-        <source
-          media="(min-width: 768px)"
-          srcSet={images.tablet.src}
-          width={images.tablet.width}
-          height={images.tablet.height}
-        />
-        <Image
+      <picture
+        className="w-full md:flex-1"
+        style={
+          blurDataURL
+            ? {
+                backgroundImage: `url(${blurDataURL})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }
+            : undefined
+        }
+      >
+        <source media="(min-width: 1280px)" srcSet={images.desktop.src} />
+        <source media="(min-width: 768px)" srcSet={images.tablet.src} />
+        <img
           src={images.mobile.src}
           alt={alt}
           width={images.mobile.width}
           height={images.mobile.height}
-          className="w-full object-cover md:w-auto"
+          style={{
+            aspectRatio: `${images.mobile.width} / ${images.mobile.height}`,
+          }}
+          className={clsx(
+            "w-full object-cover",
+            isHero ? "md:aspect-768/650" : "md:aspect-768/600",
+            isHero ? "lg:aspect-830/650" : "lg:aspect-830/600",
+          )}
+          loading={isHero ? "eager" : "lazy"}
+          fetchPriority={isHero ? "high" : "auto"}
+          decoding={isHero ? "sync" : "async"}
         />
       </picture>
     </div>
