@@ -46,12 +46,6 @@
   /* Custom Spacing (only values not in Tailwind default) */
   --spacing-30: 1.875rem;
 
-  /* Custom Aspect Ratios */
-  --aspect-ratio-768\/650: 768 / 650;
-  --aspect-ratio-768\/600: 768 / 600;
-  --aspect-ratio-830\/650: 830 / 650;
-  --aspect-ratio-830\/600: 830 / 600;
-
   /* Breakpoints: Mobile (<768px), Tablet (768-1279px), Desktop (1280-1440px) */
   --breakpoint-md: 48rem;
   --breakpoint-lg: 80rem;
