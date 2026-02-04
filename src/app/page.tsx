@@ -44,7 +44,7 @@ const homeFeatures: Feature[] = [
   {
     title: "100% Responsive",
     description:
-      "No matter which the device you're on, our site is fully responsive and stories look beautiful on any screen.",
+      "No matter which device you're on, our site is fully responsive and stories look beautiful on any screen.",
     image: "/assets/features/desktop/responsive.svg",
   },
   {
