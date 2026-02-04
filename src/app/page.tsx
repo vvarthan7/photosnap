@@ -4,6 +4,7 @@ import TextImage from "@/components/TextImage";
 import { Story } from "@/components/StoryCard";
 import FeatureItemContainer from "@/components/FeatureItemContainer";
 import { Feature } from "@/components/FeatureItem";
+import Footer from "@/components/Footer";
 
 const homeStories: Story[] = [
   {
@@ -168,6 +169,7 @@ export default function Home() {
         />
         <StoryCardContainer stories={homeStories} />
         <FeatureItemContainer features={homeFeatures} />
+        <Footer />
       </main>
     </>
   );
