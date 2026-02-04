@@ -88,13 +88,10 @@ const TextImage = ({
           alt={alt}
           width={images.mobile.width}
           height={images.mobile.height}
-          style={{
-            aspectRatio: `${images.mobile.width} / ${images.mobile.height}`,
-          }}
           className={clsx(
             "w-full object-cover",
-            isHero ? "md:aspect-768/650" : "md:aspect-768/600",
-            isHero ? "lg:aspect-830/650" : "lg:aspect-830/600",
+            isHero ? "md:h-[650px]" : "md:h-[600px]",
+            isHero ? "lg:h-[650px]" : "lg:h-[600px]",
           )}
           loading={isHero ? "eager" : "lazy"}
           fetchPriority={isHero ? "high" : "auto"}
