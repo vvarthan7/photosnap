@@ -4,12 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Button from "./Button";
-
-const NAV_LINKS = [
-  { href: "/stories", label: "STORIES" },
-  { href: "/features", label: "FEATURES" },
-  { href: "/pricing", label: "PRICING" },
-];
+import { NAV_LINKS } from "../constants/navigation";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -88,11 +83,7 @@ const Header = () => {
               ))}
             </ul>
             <div className="pt-5 w-full flex justify-center">
-              <Button
-                variant="primary"
-                href="/invite"
-                className="w-full text-center"
-              >
+              <Button variant="primary" className="w-full text-center">
                 GET AN INVITE
               </Button>
             </div>
