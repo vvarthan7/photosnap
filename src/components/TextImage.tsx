@@ -1,11 +1,6 @@
 import clsx from "clsx";
 import Button from "./Button";
-
-interface ImageSource {
-  src: string;
-  width: number;
-  height: number;
-}
+import { Images } from "./Banner";
 
 interface TextImageProps {
   title: string;
@@ -13,11 +8,7 @@ interface TextImageProps {
   btnLabel: string;
   imagePosition: "left" | "right";
   bgColor: "bg-neutral-950" | "bg-neutral-0";
-  images: {
-    mobile: ImageSource;
-    tablet: ImageSource;
-    desktop: ImageSource;
-  };
+  images: Images;
   alt: string;
   isHero?: boolean;
   blurDataURL?: string;
