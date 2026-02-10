@@ -99,6 +99,35 @@ body {
   }
 }
 
+/* Gradient accent bar (mobile only - horizontal on mobile, hidden on tablet+) */
+.gradient-accent-mobile {
+  position: relative;
+}
+
+.gradient-accent-mobile::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 1.75rem;
+  width: 8rem;
+  height: 0.375rem;
+  background: linear-gradient(
+    to right,
+    var(--color-accent-peach),
+    var(--color-accent-pink),
+    var(--color-accent-blue)
+  );
+}
+
+@media (min-width: 48rem) {
+  .gradient-accent-mobile {
+    position: absolute;
+  }
+  .gradient-accent-mobile::before {
+    display: none;
+  }
+}
+
 /* Text Presets */
 .text-preset-1 {
   font-family: var(--font-dm-sans), sans-serif;

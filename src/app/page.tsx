@@ -169,8 +169,8 @@ export default function Home() {
         />
         <StoryCardContainer stories={homeStories} />
         <FeatureItemContainer features={homeFeatures} />
-        <Footer />
       </main>
+      <Footer />
     </>
   );
 }
