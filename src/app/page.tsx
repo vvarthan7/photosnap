@@ -1,45 +1,10 @@
 import Header from "@/components/Header";
 import StoryCardContainer from "@/components/StoryCardContainer";
 import TextImage from "@/components/TextImage";
-import { Story } from "@/components/StoryCard";
 import FeatureItemContainer from "@/components/FeatureItemContainer";
 import { Feature } from "@/components/FeatureItem";
 import Footer from "@/components/Footer";
-
-const homeStories: Story[] = [
-  {
-    title: "The Mountains",
-    author: "John Appleseed",
-    images: {
-      mobile: "/assets/stories/mobile/mountains.jpg",
-      desktop: "/assets/stories/desktop/mountains.jpg",
-    },
-  },
-  {
-    title: "Sunset Cityscapes",
-    author: "Benjamin Cruz",
-    images: {
-      mobile: "/assets/stories/mobile/cityscapes.jpg",
-      desktop: "/assets/stories/desktop/cityscapes.jpg",
-    },
-  },
-  {
-    title: "18 Days Voyage",
-    author: "Alexei Borodin",
-    images: {
-      mobile: "/assets/stories/mobile/18-days-voyage.jpg",
-      desktop: "/assets/stories/desktop/18-days-voyage.jpg",
-    },
-  },
-  {
-    title: "Architecturals",
-    author: "Samantha Brooke",
-    images: {
-      mobile: "/assets/stories/mobile/architecturals.jpg",
-      desktop: "/assets/stories/desktop/architecturals.jpg",
-    },
-  },
-];
+import { stories } from "@/data/stories.json";
 
 const homeFeatures: Feature[] = [
   {
@@ -167,7 +132,7 @@ export default function Home() {
           alt="Designed for Everyone"
           blurDataURL="data:image/webp;base64,UklGRi4AAABXRUJQVlA4ICIAAACwAQCdASoKAAcABUB8JZQAAueBcy+AAP7ssG/ns9QlwAAA"
         />
-        <StoryCardContainer stories={homeStories} />
+        <StoryCardContainer stories={stories.slice(0, 4)} />
         <FeatureItemContainer features={homeFeatures} />
       </main>
       <Footer />

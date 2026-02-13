@@ -1,0 +1,196 @@
+{
+  "stories": [
+    {
+      "id": "1",
+      "title": "The Mountains",
+      "author": "John Appleseed",
+      "images": {
+        "mobile": "/assets/stories/mobile/mountains.webp",
+        "desktop": "/assets/stories/desktop/mountains.webp"
+      },
+      "blurDataURL": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAADQAQCdASoHAAoABUB8JZgCdAEOzWOuAAD3l5Lp1c0cXzIcMFZxWFwV9RroAAAA",
+      "ctaLabel": "READ STORY",
+      "date": "April 16th 2020"
+    },
+    {
+      "id": "2",
+      "title": "Sunset Cityscapes",
+      "author": "Benjamin Cruz",
+      "images": {
+        "mobile": "/assets/stories/mobile/cityscapes.webp",
+        "desktop": "/assets/stories/desktop/cityscapes.webp"
+      },
+      "blurDataURL": "data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAACwAQCdASoHAAoABUB8JQBOgB5vDqAAAMyMGHcLq2+O1tITGGgAAA==",
+      "ctaLabel": "READ STORY",
+      "date": "April 14th 2020"
+    },
+    {
+      "id": "3",
+      "title": "18 Days Voyage",
+      "author": "Alexei Borodin",
+      "images": {
+        "mobile": "/assets/stories/mobile/18-days-voyage.webp",
+        "desktop": "/assets/stories/desktop/18-days-voyage.webp"
+      },
+      "blurDataURL": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAADQAQCdASoHAAoABUB8JQBOj+ADAovKsAD4SSuKAm1q6TtPL5Ua9l2sPcAAAA==",
+      "ctaLabel": "READ STORY",
+      "date": "April 11th 2020"
+    },
+    {
+      "id": "4",
+      "title": "Architecturals",
+      "author": "Samantha Brooke",
+      "images": {
+        "mobile": "/assets/stories/mobile/architecturals.webp",
+        "desktop": "/assets/stories/desktop/architecturals.webp"
+      },
+      "blurDataURL": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAADwAQCdASoHAAoABUB8JYwCdAD0gFmk+AAA9nQg9XGsfDW7xAclGPwAAAA=",
+      "ctaLabel": "READ STORY",
+      "date": "April 9th 2020"
+    },
+    {
+      "id": "5",
+      "title": "World Tour 2019",
+      "author": "Timothy Wagner",
+      "images": {
+        "mobile": "/assets/stories/mobile/world-tour.webp",
+        "desktop": "/assets/stories/desktop/world-tour.webp"
+      },
+      "blurDataURL": "data:image/webp;base64,UklGRjAAAABXRUJQVlA4ICQAAACwAQCdASoHAAoABUB8JZQAAvhs9OAAAP5k1J8VTVUaSj6xQAA=",
+      "ctaLabel": "READ STORY",
+      "date": "April 7th 2020"
+    },
+    {
+      "id": "6",
+      "title": "Unforeseen Corners",
+      "author": "William Malcolm",
+      "images": {
+        "mobile": "/assets/stories/mobile/unforeseen-corners.webp",
+        "desktop": "/assets/stories/desktop/unforeseen-corners.webp"
+      },
+      "blurDataURL": "data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAACwAQCdASoHAAoABUB8JYgAAudIM6cAAP67rIS8QnFtTGh/VoxoAA==",
+      "ctaLabel": "READ STORY",
+      "date": "April 3rd 2020"
+    },
+    {
+      "id": "7",
+      "title": "King on Africa: Part II",
+      "author": "Tim Hillenburg",
+      "images": {
+        "mobile": "/assets/stories/mobile/king-on-africa.webp",
+        "desktop": "/assets/stories/desktop/king-on-africa.webp"
+      },
+      "blurDataURL": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAACwAQCdASoHAAoABUB8JQBOgBujC3AAAP5OadWrrWMAlYz2rzHTqu0aH88AAA==",
+      "ctaLabel": "READ STORY",
+      "date": "March 29th 2020"
+    },
+    {
+      "id": "8",
+      "title": "The Trip to Nowhere",
+      "author": "Felicia Rourke",
+      "images": {
+        "mobile": "/assets/stories/mobile/trip-to-nowhere.webp",
+        "desktop": "/assets/stories/desktop/trip-to-nowhere.webp"
+      },
+      "blurDataURL": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAADwAQCdASoHAAoABUB8JYgCdADz5+0qoWAA+x2dwDJXR7oGGQh0auUAAAA=",
+      "ctaLabel": "READ STORY",
+      "date": "March 21st 2020"
+    },
+    {
+      "id": "9",
+      "title": "Rage of The Sea",
+      "author": "Mohammed Abdul",
+      "images": {
+        "mobile": "/assets/stories/mobile/rage-of-the-sea.webp",
+        "desktop": "/assets/stories/desktop/rage-of-the-sea.webp"
+      },
+      "blurDataURL": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAADQAQCdASoHAAoABUB8JQBOgCHEoLE5AAD2QvcCCfWhQoGP0ASuQc1A6P4AAA==",
+      "ctaLabel": "READ STORY",
+      "date": "March 19th 2020"
+    },
+    {
+      "id": "10",
+      "title": "Running Free",
+      "author": "Michelle",
+      "images": {
+        "mobile": "/assets/stories/mobile/running-free.webp",
+        "desktop": "/assets/stories/desktop/running-free.webp"
+      },
+      "blurDataURL": "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAACwAQCdASoHAAoABUB8JaQAAqxuSMAAAPiQMqtDNQlav17Rre29UAAA",
+      "ctaLabel": "READ STORY",
+      "date": "March 16th 2020"
+    },
+    {
+      "id": "11",
+      "title": "Behind the Waves",
+      "author": "Lamarr Wilson",
+      "images": {
+        "mobile": "/assets/stories/mobile/behind-the-waves.webp",
+        "desktop": "/assets/stories/desktop/behind-the-waves.webp"
+      },
+      "blurDataURL": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAACwAQCdASoHAAoABUB8JaACdAEOZzdAAP7VD60nEVhNR5pXZK2Q6CDz+wAAAA==",
+      "ctaLabel": "READ STORY",
+      "date": "March 11th 2020"
+    },
+    {
+      "id": "12",
+      "title": "Calm Waters",
+      "author": "Samantha Brooke",
+      "images": {
+        "mobile": "/assets/stories/mobile/calm-waters.webp",
+        "desktop": "/assets/stories/desktop/calm-waters.webp"
+      },
+      "blurDataURL": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAADQAQCdASoHAAoABUB8JQBWACHcOdaRAAD+1AMoxY/zJCWq8d2r6sN8AAA=",
+      "ctaLabel": "READ STORY",
+      "date": "March 9th 2020"
+    },
+    {
+      "id": "13",
+      "title": "The Milky Way",
+      "author": "Benjamin Cruz",
+      "images": {
+        "mobile": "/assets/stories/mobile/milky-way.webp",
+        "desktop": "/assets/stories/desktop/milky-way.webp"
+      },
+      "blurDataURL": "data:image/webp;base64,UklGRjAAAABXRUJQVlA4ICQAAACwAQCdASoHAAoABUB8JZQAAudl788AAP7p8rspFc/FwEhgAAA=",
+      "ctaLabel": "READ STORY",
+      "date": "March 5th 2020"
+    },
+    {
+      "id": "14",
+      "title": "Night at The Dark Forest",
+      "author": "Mohammed Abdul",
+      "images": {
+        "mobile": "/assets/stories/mobile/dark-forest.webp",
+        "desktop": "/assets/stories/desktop/dark-forest.webp"
+      },
+      "blurDataURL": "data:image/webp;base64,UklGRjAAAABXRUJQVlA4ICQAAACwAQCdASoHAAoABUB8JZQCw7CyZ7b4AO6Gqz/iKdnfaQZAAAA=",
+      "ctaLabel": "READ STORY",
+      "date": "March 4th 2020"
+    },
+    {
+      "id": "15",
+      "title": "Somwarpet's Beauty",
+      "author": "Michelle",
+      "images": {
+        "mobile": "/assets/stories/mobile/somwarpet.webp",
+        "desktop": "/assets/stories/desktop/somwarpet.webp"
+      },
+      "blurDataURL": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAADwAQCdASoHAAoABUB8JbACdADdkBm54QAAzIKVF7ihgBj0ltdPDTy4X9KvraiAAAA=",
+      "ctaLabel": "READ STORY",
+      "date": "March 1st 2020"
+    },
+    {
+      "id": "16",
+      "title": "Land of Dreams",
+      "author": "William Malcolm",
+      "images": {
+        "mobile": "/assets/stories/mobile/land-of-dreams.webp",
+        "desktop": "/assets/stories/desktop/land-of-dreams.webp"
+      },
+      "blurDataURL": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAAAQAgCdASoHAAoABUB8JagCdLoAAwdHOtYAAPuF4AGSbrafn7crQgc9d4tLwAAA",
+      "ctaLabel": "READ STORY",
+      "date": "February 25th 2020"
+    }
+  ]
+}
