@@ -1,6 +1,8 @@
 import Banner from "@/components/Banner";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import InfiniteStories from "@/components/InfiniteStories";
+import { stories } from "@/data/stories.json";
 
 export default function Stories() {
   return (
@@ -43,19 +45,26 @@ export default function Stories() {
               src: "/assets/stories/mobile/moon-of-appalacia.webp",
               width: 375,
               height: 317,
+              blurDataURL:
+                "data:image/webp;base64,UklGRjAAAABXRUJQVlA4ICQAAADQAQCdASoKAAgABUB8JQBOgCPTZk5vAAD+c7gSFfLRBdAAAAA=",
             },
             tablet: {
               src: "/assets/stories/tablet/moon-of-appalacia.webp",
               width: 768,
               height: 650,
+              blurDataURL:
+                "data:image/webp;base64,UklGRjAAAABXRUJQVlA4ICQAAADQAQCdASoKAAgABUB8JQBOgCPQQNWjsAD+GwxsIfyzpRAAAAA=",
             },
             desktop: {
               src: "/assets/stories/desktop/moon-of-appalacia.webp",
               width: 1440,
               height: 650,
+              blurDataURL:
+                "data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAADQAQCdASoKAAUABUB8JQBOgCPSUsN8AAD+v+fks+hzy0QXQAAAAA==",
             },
           }}
         />
+        <InfiniteStories stories={stories} />
       </main>
       <Footer />
     </>

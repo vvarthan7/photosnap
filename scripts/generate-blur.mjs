@@ -2,7 +2,12 @@ import sharp from "sharp";
 import { readdir } from "fs/promises";
 import { join } from "path";
 
-const PUBLIC_DIR = "./public/assets/home";
+// Usage: node scripts/generate-blur.mjs [directory]
+// Examples:
+//   node scripts/generate-blur.mjs home
+//   node scripts/generate-blur.mjs stories/desktop
+const targetDir = process.argv[2] || "home";
+const PUBLIC_DIR = `./public/assets/${targetDir}`;
 
 async function generateBlurDataURL(imagePath) {
   const buffer = await sharp(imagePath)

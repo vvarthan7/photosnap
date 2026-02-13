@@ -4,6 +4,7 @@ export interface ImageSource {
   src: string;
   width: number;
   height: number;
+  blurDataURL?: string;
 }
 
 export interface Images {
@@ -31,7 +32,14 @@ const Banner = ({
 }) => {
   return (
     <section className="relative flex flex-col w-full md:h-[650px] md:justify-center">
-      <picture className="w-full md:h-full">
+      <picture
+        className="block w-full md:h-full bg-cover bg-center bg-no-repeat"
+        style={
+          images.mobile.blurDataURL
+            ? { backgroundImage: `url(${images.mobile.blurDataURL})` }
+            : undefined
+        }
+      >
         <source media="(min-width: 1280px)" srcSet={images.desktop.src} />
         <source media="(min-width: 768px)" srcSet={images.tablet.src} />
         <img
