@@ -2,30 +2,9 @@ import Header from "@/components/Header";
 import StoryCardContainer from "@/components/StoryCardContainer";
 import TextImage from "@/components/TextImage";
 import FeatureItemContainer from "@/components/FeatureItemContainer";
-import { Feature } from "@/components/FeatureItem";
 import Footer from "@/components/Footer";
 import { stories } from "@/data/stories.json";
-
-const homeFeatures: Feature[] = [
-  {
-    title: "100% Responsive",
-    description:
-      "No matter which device you're on, our site is fully responsive and stories look beautiful on any screen.",
-    image: "/assets/features/desktop/responsive.svg",
-  },
-  {
-    title: "No Photo Upload Limit",
-    description:
-      "Our tool has no limits on uploads or bandwidth. Freely upload in bulk and share all of your stories in one go.",
-    image: "/assets/features/desktop/no-limit.svg",
-  },
-  {
-    title: "Available to Embed",
-    description:
-      "Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube videos, Google Maps, and more.",
-    image: "/assets/features/desktop/embed.svg",
-  },
-];
+import { features } from "@/data/features.json";
 
 export default function Home() {
   return (
@@ -133,7 +112,7 @@ export default function Home() {
           blurDataURL="data:image/webp;base64,UklGRi4AAABXRUJQVlA4ICIAAACwAQCdASoKAAcABUB8JZQAAueBcy+AAP7ssG/ns9QlwAAA"
         />
         <StoryCardContainer stories={stories.slice(0, 4)} />
-        <FeatureItemContainer features={homeFeatures} />
+        <FeatureItemContainer features={features.slice(0, 3)} />
       </main>
       <Footer />
     </>

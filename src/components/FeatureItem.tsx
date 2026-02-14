@@ -1,12 +1,13 @@
 import Image from "next/image";
 
 export type Feature = {
+  id: string;
   title: string;
   description: string;
   image: string;
 };
 
-const FeatureItem = ({ title, description, image }: Feature) => {
+const FeatureItem = ({ id, title, description, image }: Feature) => {
   return (
     <article className="flex flex-col justify-start items-center text-center">
       <div className="h-[72px] flex items-center mb-12">

@@ -5,12 +5,13 @@ import { Images } from "./Banner";
 interface TextImageProps {
   title: string;
   description: string;
-  btnLabel: string;
+  btnLabel?: string;
   imagePosition: "left" | "right";
   bgColor: "bg-neutral-950" | "bg-neutral-0";
   images: Images;
   alt: string;
   isHero?: boolean;
+  isFeaturePage?: boolean;
   blurDataURL?: string;
 }
 
@@ -23,6 +24,7 @@ const TextImage = ({
   images,
   alt,
   isHero = false,
+  isFeaturePage = false,
   blurDataURL,
 }: TextImageProps) => {
   const Heading = isHero ? "h1" : "h2";
@@ -56,9 +58,11 @@ const TextImage = ({
         >
           {description}
         </p>
-        <Button variant="link" colorScheme={isDarkBg ? "light" : "dark"}>
-          {btnLabel}
-        </Button>
+        {btnLabel && (
+          <Button variant="link" colorScheme={isDarkBg ? "light" : "dark"}>
+            {btnLabel}
+          </Button>
+        )}
       </div>
       <picture
         className="w-full md:flex-1"
@@ -81,8 +85,16 @@ const TextImage = ({
           height={images.mobile.height}
           className={clsx(
             "w-full object-cover",
-            isHero ? "md:h-[650px]" : "md:h-[600px]",
-            isHero ? "lg:h-[650px]" : "lg:h-[600px]",
+            isHero
+              ? "md:h-[650px]"
+              : isFeaturePage
+                ? "md:h-[490px]"
+                : "md:h-[600px]",
+            isHero
+              ? "lg:h-[650px]"
+              : isFeaturePage
+                ? "lg:h-[490px]"
+                : "lg:h-[600px]",
           )}
           loading={isHero ? "eager" : "lazy"}
           fetchPriority={isHero ? "high" : "auto"}
